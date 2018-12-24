@@ -1,22 +1,21 @@
 package org.nico.ratel.landlords.client;
 
-import java.io.IOException;
-
-import org.nico.ratel.landlords.client.handler.DefaultChannelInitializer;
-
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import org.nico.ratel.landlords.client.handler.DefaultChannelInitializer;
 
-public class SimpleClient {
+import java.io.IOException;
+
+public class RemoteSimpleClient {
 
 	public static int id = -1;
 	
-	public static String serverAddress = "127.0.0.1";
+	public static String serverAddress = "39.105.65.8";
 	
-	public static int port = 7777;
+	public static int port = 1024;
 	
 	public static void main(String[] args) throws InterruptedException, IOException {
 		if(args != null && args.length > 0) {

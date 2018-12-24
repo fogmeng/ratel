@@ -12,7 +12,7 @@ public class ServerContains {
 	/**
 	 * Server port
 	 */
-	public static int port = 1024;
+	public static int port = 7777;
 	
 	/**
 	 * The map of server side
